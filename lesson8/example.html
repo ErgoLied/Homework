@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>JS 1</title>
+</head>
+<body>
+	<script>
+<!--	- Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.-->
+<!--	Вивести кожну змінну за допомогою: console.log, document.write-->
+	let hello = 'hello',
+        site = 'owu',
+        domen1 = 'com',
+        domen2 = 'ua';
+		a = 1,
+        b = 10,
+        c = -999,
+        d = 123,
+        pi = 3.14,
+        e = 2.7,
+        multi_2to8 = 16,
+        ok = true,
+        fail = false;
+	console.log(`${hello} ${site}.${domen1}.${domen2}`);
+	console.log(`a = ${a}, b = ${b}, c = ${c}, d = ${d}`);
+	console.log(`number Pi = ${pi}`);
+	console.log(`constant e = ${e}`);
+	console.log(`2 * 8 = ${multi_2to8}`);
+	console.log(`if 0 < 1 then ${ok} else ${fail}`);
+
+	document.write(`<h1>${hello} <span style="color: #fea500">${site}.${domen1}.${domen2}</span></h1>`);
+	document.write(`<p>let me show you some <strong>random numbers</strong>: ${a}, ${b}, ${c}, ${d}</p>`);
+	document.write(`<p>number Pi = ${pi}</p>`);
+	document.write(`<p>constant e = ${e}</p>`);
+	document.write(`<p>2 * 8 = ${multi_2to8}</p>`);
+	document.write(`<p>if 0 < 1 then <strong>${ok}</strong> else <strong>${fail}</strong></p>`);
+
+
+console.log(`-----------------`);
+
+<!--	- Переприсвоїти кожну змінну з завдання вище на будь які довільні значення.-->
+<!--	Вивести кожну змінну за допомогою: console.log, document.write-->
+	hello = 'good morning',
+    site = 'wikipedia',
+    domen1 = 'ru',
+    domen2 = 'org';
+	a = 10,
+    b = 20,
+    c = 666,
+    d = 420,
+    pi = 3.1415,
+    e = 2.7182818284,
+    multi_2to8 = 'sixteen',
+    ok = 1,
+    fail = 0;
+
+console.log(`${hello} ${domen1}.${site}.${domen2}`);
+console.log(`a = ${a}, b = ${b}, c = ${c}, d = ${d}`);
+console.log(`number Pi = ${pi}`);
+console.log(`constant e = ${e}`);
+console.log(`2 * 8 = ${multi_2to8}`);
+console.log(`if 0 < 1 then ${ok} else ${fail}`);
+
+document.write(`<h1>${hello} <span style="color: #fea500">${domen1}.${site}.${domen2}</span></h1>`);
+document.write(`<p>let me show you some <strong>random numbers</strong>: ${a}, ${b}, ${c}, ${d}</p>`);
+document.write(`<p>number Pi = ${pi}</p>`);
+document.write(`<p>constant e = ${e}</p>`);
+document.write(`<p>2 * 8 = ${multi_2to8}</p>`);
+document.write(`<p>if 0 < 1 then <strong>${ok}</strong> else <strong>${fail}</strong></p>`);
+
+<!--	- Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. Зконкатенувати їх в одну змінну person.-->
+let firstName = 'Marina',
+    middleName = 'Kokoko',
+    lastName = 'BatyaName';
+person = firstName+' '+middleName+' '+lastName;
+document.write(`<h2>Hi, my full name is ${person}</h2>`)
+
+<!--	- За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.-->
+<!--	Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".-->
+let name = prompt(`Введите Ваше имя:`);
+let finalname = prompt(`Введите Ваше отчество:`);
+let age = prompt(`Введите Ваш возраст (числом):`);
+alert(`Поздравляю, ${name} ${finalname}! Вам ${age} лет~`);
+
+
+console.log(`-----------------`);
+
+<!--	- За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.-->
+<!--	let a = 100; let b = '100'; let c = true;-->
+let a1 = 100,
+	b1 = '100',
+	c1 = true;
+console.log(typeof a1); //number
+console.log(typeof b1); //string
+console.log(typeof c1); //boolean
+
+
+console.log(`-----------------`);
+<!--	- Поставити відповідний оператор в виразах що б вийшов відповідний результат.-->
+<!--	В однакових виразаї не використовувати однакові оператори!!!-->
+
+<!--	5 ? 6 -> true-->
+console.log(5 < 6);
+
+<!--	5 ? 6 -> false-->
+console.log(5 > 6);
+
+<!--	5 ? 6 -> false-->
+console.log(5 >= 6);
+
+<!--	5 ? 6 -> false-->
+console.log(5===6);
+
+<!--	10 ? 10 -> true-->
+console.log(10 <= 10);
+
+<!--	10 ? 10 -> true-->
+console.log(10 == 10);
+
+<!--	10 ? 10 -> false-->
+console.log(10 !== 10);
+
+<!--	10 ? 10 -> false-->
+console.log(10 > 10);
+
+<!--	10 ? 10 -> false-->
+console.log(10 != 10);
+
+<!--	123 ? '123' -> false-->
+console.log(123 === '123');
+
+<!--	123 ? '123' -> true-->
+console.log(123 == '123');
+	</script>
+
+<!--	Додатково:-->
+<!--	- Подивіться на наступні вирази і спробуйте вгадати яким буде вивід в консоль. Перевірте себе.-->
+<!--	console.log(132 > 100 && 45 < 12 );         false-->
+<!--	console.log(34 > 33 && 23 < 90 );           true-->
+<!--	console.log(99 > 100 && 45 > 12 );          false-->
+<!--	console.log(132 > 100 || 45 < 12 );         true-->
+<!--	console.log(111 > 11 || 45 < 111 );         true-->
+<!--	console.log((111 > 11 || 45 < 111) && (132 > 100 || 45 < 12) );             true-->
+<!--	console.log((111 > 11 || 45 < 56) || (132 > 100 || 45 < 12) );              true-->
+<!--	console.log((132 > 100 && 45 < 12 ) && (132 > 100 || 45 < 12 ) );           false-->
+<!--	console.log((111 > 11 || 45 < 111) || (99 > 100 && 45 > 12 ));              true-->
+<!--	console.log(!!'-1');            true-->
+<!--	console.log(!!-1);              true-->
+<!--	console.log(!!'0');             false-->
+<!--	console.log(!!'null');          true-->
+<!--	console.log(!!'undefined');     false-->
+<!--	console.log(!!(3/'owu'));       false-->
+<!--	console.log((111 > 11 || 45 < 111) ||  !!'0');                              true-->
+<!--	console.log((!!111 == !!11 || 45 < 111) && (99 > 100 && 45 > 12 ));         false-->
+</body>
+</html>
