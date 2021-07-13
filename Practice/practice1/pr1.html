@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Practice 1</title>
+</head>
+<body>
+	<script>
+        document.write(`1. Оголосіть змінні str, num, flag и txt зі значеннями «Привіт», 123, true, «true»
+        За допомогою typeof переконайтесь, що значення змінних належать типам: string, number и  boolean.`);
+        let str = 'Привіт';
+        let num = 123;
+        let flag = true;
+        let txt = 'true';
+
+        document.write(`<br>`+typeof str+`<br>`);
+        document.write(typeof num+`<br>`);
+        document.write(typeof flag+`<br>`);
+        document.write(typeof txt+`<br>`+`<br>`);
+
+        console.log(typeof str);        //string
+        console.log(typeof num);        //number
+        console.log(typeof flag);       //boolean
+        console.log(typeof txt);        //string
+
+        document.write(`<p>2. Оголосіть змінні a1, a2, a3, a4, a5. За домогою 3х математичних оператцій отримайте числа:
+	    34, 12, 66, 90, 87. Старайтесь використовувати різні оператори.</p>`);
+              let a1 = 2;
+              let a2 = 4;
+              let a3 = 6;
+              let a4 = 10;
+              let a5 = 20;
+              let rez1 = a2*a3 + a5/a1;
+              let rez2 = a2*a3/(a4%a2);
+              let rez3 = (a4+a2/a2)*a3;
+              let rez4 = a3*a5-a4-a5;
+              let rez5 = a2*a5+a3+a1/a1;
+              document.write(`<p>Результат 1: a2*a3 + a5/a1 = ${rez1}</p>`);
+              document.write(`<p>Результат 2: a2*a3 / (a4%a2) = ${rez2}</p>`);
+              document.write(`<p>Результат 3: (a4+a2/a2)*a3 = ${rez3}</p>`);
+              document.write(`<p>Результат 4: a3*a5-a4-a5 = ${rez4}</p>`);
+              document.write(`<p>Результат 5: a2*a5+a3+a1/a1 = ${rez5} - сорри, не 3 операции, а 4 :с</p>`);
+
+
+        document.write(`3.  Створіть змінні a6, a7, a8, a9, a10. Запишіть в них результати виразів:`);
+        let a6 = 5 % 3;
+        let a7 = 3 % 5;
+        let a8 = 5 + '3';
+        let a9 = '5' - 3;
+        let a10 = 75 + 'кг';
+
+        document.write(`<p>a6 = ${a6}</p>`);
+        document.write(`<p>a7 = ${a7}</p>`);
+        document.write(`<p>a8 = ${a8}</p>`);
+        document.write(`<p>a9 = ${a9}</p>`);
+        document.write(`<p>a10 = ${a10}</p>`);
+        //
+        //       4. Напишіть код, який вираховує площу прямокутника висотою 23см. (змінна height) та шириною 10см (змінна width).
+        //       Значееня площі зберігати в змінній s.
+        document.write(`<p>4. Площа прямокутника при height = 23 см, width = 10 см </p>`);
+        let height = 23;
+        let width = 10;
+        let s;
+        s = (height + width) * 2;
+        document.write(`<p>s = ${s}</p>`);
+
+
+        //       5.  Напиши код, который находит объем цилиндра высотой 10м (переменная heightC) и диаметром основания 4м (dC),
+        //           результат поместите в переменную v.
+        document.write(`<p>5. Об'єм циліндра з висотою 10м, діаметром 4м</p>`);
+        let heightC = 10;
+        let dC = 4;
+        const pi = 3.14;
+        let v;
+        v = heightC * pi * (dC ** 2) / 4;
+        document.write(`<p>v = ${v}</p>`);
+
+        //
+        //       6. У прямоугольного треугольника две стороны n (со значением 3) и m (со значением 4).
+        //       Найдите гипотенузу k по теореме Пифагора (нужно использовать функцию Math.pow(число, степень) или
+        //       оператор возведения в степень ** ).
+        document.write(`<p>6. Гіпотенуза прям. трикутника з катетами 3 і 4</p>`);
+        let n = 3;
+        let m = 4;
+        let k = Math.sqrt(n**2 + m**2);
+        document.write(`<p>k = ${k}</p>`);
+
+
+        document.write(`<p>7. Тут має бути завдання :V</p>`);
+        document.write(`<p>8. Нка сусідній сторінці</p>`);
+
+
+        document.write(`<br><p>9. Создать 4 переменные с использованием ключевого слова let с именами str1, str2, str3, concatenation.
+                  Переменной str1 присвоить фразу ‘Кто ‘, str2 – ‘ты ‘, str3 – ‘такой?’
+                  Локальной переменной concatenation присвоить результат конкатенации 3-х строк: str1, str2, str3.
+                  Вывести в документ содержимое переменной concatenation спомощью document.write</p>`);
+        let str1 = 'Кто ';
+        let str2 = 'ты ';
+        let str3 = 'такой?';
+        let concatenation = str1+str2+str3;
+        document.write(concatenation);
+
+        //
+        //       10. Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
+        //       let str = "20";
+        //       let a = 5;
+        //       document.write(str + a + "<br/>");         205: 20 - строка и 5 - число, произошла конкатенация (знак +)
+        //       document.write(str - a + "<br/>");         15: из-за того, что есть мат.операция (отнимание) и вторая
+        //                                                  переменная - число, строку переведет в число и произойдет вычисление
+        //       document.write(str * "2" + "<br/>");       40: есть мат.опер. - умножение, есть две строки, обозначающие числа
+        //                                                  поэтому их обе переведет в тип num и произойдет вычисление
+        //       document.write(str / 2 + "<br/>");         10: по той же причине, что и выше
+        //                                                  + "<br/>" - "склеивание" с переносом (конкат.)
+
+
+	</script>
+</body>
+</html>

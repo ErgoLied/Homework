@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Title</title>
+</head>
+<body>
+	<script>
+        //
+        //           3
+        //       Все параметры получаем с клавиатуры!!!!(prompt , confirm)
+        //       Создать переменную isRoadClear которая характеризирует наличие на дороге машин.
+        //           Улучшаем предыдущее задание.
+        //           1 Если светофор зеленый и машин нет - вывести "иди".
+        //           2 Если светофор зеленый и машины есть  - вывести подожди пока нарушители проедут".
+
+        //           3 Если светофор желтый и машины есть - вывести "жди".
+        //           4 Если светофор желтый и машин нет - вывести "все рано жди".
+
+        //           5 Если светофор красный и машин нет- вывести "стой все рано".
+        //           6 Если светофор красный - и машины есть вывести "стой и жди".
+
+        //           7 Если светофор в аварийном режиме вывести "делай что хочешь"!
+
+        let color = prompt(`Какой свет светофора?`);
+        let isRoadClear = confirm(`Есть ли на дороге машины?`);
+        let flag;
+        if (isRoadClear===true){
+            flag=1;
+        }else{
+            flag=0;
+        }
+
+        // switch (color) {
+        //     case 'зеленый':
+        //         switch (flag) {
+        //             case 1:                                             //ошибка в строке Uncaught SyntaxError: Unexpected number
+        //                 alert(`подожди пока нарушители проедут`);
+        //                 break;
+        //             default:
+        //                 alert(`иди`);
+        //         }
+        //         break;
+        // }
+
+
+
+        console.log(isRoadClear);
+        switch (color) {
+            case 'зеленый':
+                if(flag===1){
+                    alert(`подожди пока нарушители проедут`);
+                }else{
+                    alert(`иди`);
+                }
+                break;
+            case 'желтый':
+                if(flag===1){
+                    alert(`жди`);
+                }else{
+                    alert(`все рано жди`);
+                }
+                break;
+            case 'красный':
+                if(flag===1){
+                    alert(`стой и жди`);
+                } else{
+                    alert(`стой все рано`);
+                }
+                break;
+            default:
+                alert(`делай что хочешь`);
+        }
+	</script>
+
+</body>
+</html>

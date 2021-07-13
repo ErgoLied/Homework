@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Title</title>
+</head>
+<body>
+	<script>
+        //       =====================
+        //       ======ДОП============
+        //       =====================
+        document.write(`1. Три різних числа вводяться через prompt().
+        За допомоги if else вивести іх в порядку зростання. (відсортувати по зростанню)`);
+        let a1 = +prompt(`set num 1`);
+        let a2 = +prompt(`set num 2`);
+        let a3 = +prompt(`set num 3`);
+        let min;
+        let mid;
+        let max;
+        if(a1<=a2 && a1<=a3){             //проверка минимального
+            min=a1;
+        }
+        else if(a2<=a1 && a2<=a3){
+            min=a2;
+        }
+        else{
+            min=a3;
+        }
+
+        if((a1<=a2 && a1>=a3)||(a1>=a2 && a1<=a3)){             //проверка среднего
+            mid=a1;
+        }
+        else if((a2<=a1 && a2>=a3)||a2>=a1 && a2<=a3){
+            mid=a2;
+        }
+        else{
+            mid=a3;
+        }
+
+        if(a1>=a2 && a1>=a3){             //проверка максимального
+            max=a1;
+        }
+        else if(a2>=a1 && a2>=a3){
+            max=a2;
+        }
+        else{
+            max=a3;
+        }
+        document.write(`<p>Отсортированные числа: ${min} ${mid} ${max}</p>`);
+	</script>
+</body>
+</html>
