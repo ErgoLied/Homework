@@ -21,3 +21,21 @@ h1, h3{
     width: 100%;
     border-bottom: 2px dashed black;
 }
+.food{
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+}
+.product-card{
+    background-color: lightblue;
+    font-family: 'Titillium Web', sans-serif;
+    border-radius: 5px;
+    border: 1px solid #102b3e;
+    margin: 10px;
+    width: 260px;
+}
+.product-card img{
+    border-radius: 0 0 5px 5px;
+}
+.product-title{
+    text-transform: uppercase;
+}
