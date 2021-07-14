@@ -27,48 +27,33 @@
 
         let color = prompt(`Какой свет светофора?`);
         let isRoadClear = confirm(`Есть ли на дороге машины?`);
-        let flag;
-        if (isRoadClear===true){
-            flag=1;
-        }else{
-            flag=0;
-        }
 
-        // switch (color) {
-        //     case 'зеленый':
-        //         switch (flag) {
-        //             case 1:                                             //ошибка в строке Uncaught SyntaxError: Unexpected number
-        //                 alert(`подожди пока нарушители проедут`);
-        //                 break;
-        //             default:
-        //                 alert(`иди`);
-        //         }
-        //         break;
-        // }
-
-
-
-        console.log(isRoadClear);
         switch (color) {
             case 'зеленый':
-                if(flag===1){
-                    alert(`подожди пока нарушители проедут`);
-                }else{
-                    alert(`иди`);
+                switch (isRoadClear){
+                    case true:
+                        alert(`подожди пока нарушители проедут`);
+                        break;
+	                default:
+                        alert(`иди`);
                 }
                 break;
             case 'желтый':
-                if(flag===1){
-                    alert(`жди`);
-                }else{
-                    alert(`все рано жди`);
+                switch (isRoadClear){
+                    case true:
+                        alert(`жди`);
+                        break;
+                    default:
+                        alert(`все рано жди`);
                 }
                 break;
             case 'красный':
-                if(flag===1){
-                    alert(`стой и жди`);
-                } else{
-                    alert(`стой все рано`);
+                switch (isRoadClear){
+                    case true:
+                        alert(`стой и жди`);
+                        break;
+                    default:
+                        alert(`стой все рано`);
                 }
                 break;
             default:
