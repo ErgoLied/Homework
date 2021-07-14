@@ -1,0 +1,23 @@
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.w400{
+    max-width: 400px;
+    width: 100%;
+}
+img{
+    display: block;
+    margin: 0 auto;
+    height: 260px;
+}
+h1, h3{
+    text-align: center;
+}
+.pad-20{
+    padding: 20px;
+}
+.border-bottom{
+    width: 100%;
+    border-bottom: 2px dashed black;
+}
