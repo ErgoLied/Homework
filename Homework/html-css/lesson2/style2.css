@@ -1,0 +1,27 @@
+.header{
+    background-color: dodgerblue;
+    height: 50px;
+    border-bottom: 1px solid lightblue;
+}
+.nav{
+    background-color: midnightblue;
+    height: 40px;
+}
+
+.container{
+    height: 400px;
+    display: flex;
+}
+.main{
+    width: 75%;
+    background-color: cornflowerblue;
+}
+.aside{
+    width: 25%;
+    background-color: darkslateblue;
+    border-left: 1px solid lightblue;
+}
+.footer{
+    height: 45px;
+    background-color: aquamarine;
+}

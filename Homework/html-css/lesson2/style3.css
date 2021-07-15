@@ -1,0 +1,32 @@
+.header, .footer{
+    height: 100px;
+}
+.header{
+    background-color: #e6f7b0;
+}
+
+.content{
+    display: flex;
+    align-items: stretch;
+}
+.menu{
+    width: 300px;
+    background-color: #ffb7ff;
+}
+.info{
+    width: 100%;
+}
+
+.post{
+    height: 300px;
+    background-color: #9fe2ff;
+}
+
+.footer{
+    background-color: #ffffca;
+}
+.box{
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 10px;
+}

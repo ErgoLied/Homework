@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+.users-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.user-block{
+    width: 45%;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid #0f2e45;
+    overflow-wrap: break-word;
+}

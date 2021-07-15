@@ -1,0 +1,228 @@
+body{
+    margin: 0;
+    font-family: Tahoma, sans-serif;
+    color: #102b3e;
+}
+h2, h3{
+    margin: 0;
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+
+
+.pad-top100{
+    padding-top: 100px;
+}
+.pad-bot100{
+    padding-bottom: 100px;
+}
+.pad-bot20{
+    padding-bottom: 20px;
+}
+.pad-top20{
+    padding-top: 20px;
+}
+.pad-l-100{
+    padding-left: 100px;
+}
+.pad-r-100{
+    padding-right: 100px;
+}
+.pad-l-10{
+    padding-left: 10px;
+}
+.pad-r-10{
+    padding-right: 10px;
+}
+.mar-l-10{
+    margin-left: 10px;
+}
+.mar-r-10{
+    margin-right: 10px;
+}
+.mar-l-20{
+    margin-left: 20px;
+}
+.mar-r-20{
+    margin-right: 20px;
+}
+.mar-top-20{
+    margin-top: 20px;
+}
+.mar-bot-10{
+    margin-bottom: 10px;
+}
+.mar-bot-20{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.flex{
+    display: flex;
+}
+.center{
+    justify-content: center;
+}
+.flex-col{
+    flex-flow: column;
+}
+
+.between{
+    justify-content: space-between;
+}
+.evenly{
+    justify-content: space-evenly;
+}
+.y-center{
+    align-items: center;
+}
+.y-bot{
+    align-items: flex-end;
+}
+.pos-relative{
+    position: relative;
+}
+.pos-absolute{
+    position: absolute;
+}
+.top100 {
+    top: 100px;
+}
+.top320{
+    top: 320px;
+}
+.right400{
+    right: 400px;
+}
+
+.h20{
+    height: 20px;
+}
+.h50{
+    height: 50px;
+}
+.h100{
+    height: 100px;
+}
+.h150{
+    height: 150px;
+}
+.h200{
+    height: 200px;
+}
+.h220{
+    height: 220px;
+}
+.h250{
+    height: 250px;
+}
+.h300{
+    height: 300px;
+}
+
+.w20{
+    width: 20px;
+}
+.w100{
+    width: 100px;
+}
+.w150{
+    width: 150px;
+}
+.w200{
+    width: 200px;
+}
+.w250{
+    width: 250px;
+}
+.w300{
+    width: 300px;
+}
+.w400{
+    width: 400px;
+}
+.w500{
+    width: 500px;
+}
+.w-max{
+    width: 100%;
+}
+.col-gap-20{
+    column-gap: 20px;
+}
+
+.btn1{
+    width: 150px;
+    height: 50px;
+}
+.btn1-mod{
+    padding: 0 10px;
+    height: 50px;
+}
+.btn2{
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+}
+.btn1, .btn1-mod, .btn2{
+    cursor: pointer;
+}
+.radius5{
+    border-radius: 5px;
+}
+.radius10{
+    border-radius: 10px;
+}
+
+.round{
+    border-radius: 50%;
+}
+.triangle-left {
+    width: 0;
+    height: 0;
+    border-right: 10px solid #0f2e45;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-left: 10px solid #0f2e45;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.primary-color{
+    background-color: #ced8e1;
+}
+.secondary-color{
+    background-color: #102b3e;
+}
+.accent-color{
+    background-color: #f1545f;
+}
+.bot-line{
+    border-bottom: 2px solid #f1545f;
+}
+.left-line{
+    border-left: 1px solid #f1545f;
+}
+.right-line{
+     border-right: 1px solid #f1545f;
+ }
+.text-accent{
+    color: #f1545f;
+}
+.text-center{
+    text-align: center;
+}
+.bold{
+    font-weight: bold;
+}

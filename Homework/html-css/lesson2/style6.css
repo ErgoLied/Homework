@@ -1,0 +1,51 @@
+.w400{
+    width: 400px;
+}
+
+.header{
+    background-color: #54d5eb;
+    height: 50px;
+}
+
+.content{
+    display: flex;
+}
+.hero{
+    background-color: #d7c9e3;
+    height: 200px;
+}
+.sidebar{
+    background-color: #9fc363;
+    height: 300px;
+}
+
+.content-info{
+    width: 100%;
+}
+.main-content{
+    background-color: #f5c632;
+    height: 400px;
+}
+.extra-content{
+    background-color: #898989;
+    height: 100px;
+}
+
+.content-img{
+    display: flex;
+}
+.rel-img{
+    background-color: #2bb673;
+    width: 75%;
+    height: 100px;
+}
+.rel-post{
+    background-color: #f3ccde;
+    width: 25%;
+    height: 100px;
+}
+
+.footer{
+    background-color: #fea500;
+    height: 50px;
+}

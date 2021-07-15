@@ -1,0 +1,25 @@
+.size{
+    width: 500px;
+}
+.bc{
+    background-color: dodgerblue;
+}
+.header{
+     height: 100px;
+ }
+.widgets{
+    display: flex;
+    justify-content: space-between;
+}
+.wid{
+    width: 100%;
+    height: 300px;
+    background-color: midnightblue;
+}
+
+.contacts{
+    height: 150px;
+}
+.bc, .wid{
+    margin: 5px;
+}
