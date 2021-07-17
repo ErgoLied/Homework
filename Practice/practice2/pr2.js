@@ -96,7 +96,7 @@ console.log(`----> масив, заповнений і виведений чер
 while(ind<10){
     arr6[0]=true;
     arr6[1]=false;
-    arr6[2]=00;
+    arr6[2]=0;
     arr6[3]=999;
     arr6[4]=888;
     arr6[5]='oiu';
@@ -173,13 +173,12 @@ let citiesWithId = [
 let usersWithCities=[];
 let usrCity=0;
 document.write(`<br>USERS<br>`);
+
 for (let user of usersWithId) {
     for (const city of citiesWithId) {
         if(user.id===city.user_id){
             user.address=city;
-            usersWithCities[usrCity]=user;
-            console.log(usersWithCities[usrCity]);
-            usrCity++;
+            usersWithCities.push(user);
         }
     }
 
