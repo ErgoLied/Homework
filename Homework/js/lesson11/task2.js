@@ -44,16 +44,73 @@ console.log(Leanne);
 // -назву атрибуту
 // -опис дії атрибуту
 // інформацію брати з htmlbook.ru
-//
+
+
+
 // Таким чином описати теги
-// -a
-// -div
-// -h1
-// -span
-// -input
-// -form
-// -option
-// -select
+let a_attrs = [
+    {titleOfAttr: 'href',
+     actionOfAttr: 'Задает адрес документа, на который следует перейти'
+    },
+    {titleOfAttr: 'download',
+     actionOfAttr: 'Предлагает скачать указанный по ссылке файл'}
+];
+let div_attrs = [
+    {titleOfAttr: 'href',
+        actionOfAttr: 'Задает адрес документа, на который следует перейти'
+    },
+    {titleOfAttr: 'download',
+        actionOfAttr: 'Предлагает скачать указанный по ссылке файл'}
+];
+
+let h1_attrs = [
+    {titleOfAttr: 'href',
+        actionOfAttr: 'Задает адрес документа, на который следует перейти'
+    },
+    {titleOfAttr: 'download',
+        actionOfAttr: 'Предлагает скачать указанный по ссылке файл'}
+];
+
+let span_attrs = [
+    {titleOfAttr: 'href',
+        actionOfAttr: 'Задает адрес документа, на который следует перейти'
+    },
+    {titleOfAttr: 'download',
+        actionOfAttr: 'Предлагает скачать указанный по ссылке файл'}
+];
+
+let input_attrs = [
+    {titleOfAttr: 'href',
+        actionOfAttr: 'Задает адрес документа, на который следует перейти'
+    },
+    {titleOfAttr: 'download',
+        actionOfAttr: 'Предлагает скачать указанный по ссылке файл'}
+];
+
+let form_attrs = [
+    {titleOfAttr: 'href',
+        actionOfAttr: 'Задает адрес документа, на который следует перейти'
+    },
+    {titleOfAttr: 'download',
+        actionOfAttr: 'Предлагает скачать указанный по ссылке файл'}
+];
+
+let option_attrs = [
+    {titleOfAttr: 'href',
+        actionOfAttr: 'Задает адрес документа, на который следует перейти'
+    },
+    {titleOfAttr: 'download',
+        actionOfAttr: 'Предлагает скачать указанный по ссылке файл'}
+];
+
+let select_attrs = [
+    {titleOfAttr: 'href',
+        actionOfAttr: 'Задает адрес документа, на который следует перейти'
+    },
+    {titleOfAttr: 'download',
+        actionOfAttr: 'Предлагает скачать указанный по ссылке файл'}
+];
+
 // Приклад результуючого об'єкту
 // {
 //     titleOfTag: 'area',
@@ -66,3 +123,13 @@ console.log(Leanne);
 // ]
 //
 // }
+class Tag{
+    constructor(name, action, attrs) {
+        this.name = name;
+        this.action = action;
+        this.attrs = attrs;
+    }
+}
+
+console.log(new Tag('a', 'Тег <a> является одним из важных элементов HTML и предназначен для создания ссылок',
+    a_attrs));
