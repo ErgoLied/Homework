@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Online store the best of the best</title>
+
+	<style>
+		body{
+			font-family: Arial,serif;
+		}
+        .form-of-item{
+	        display: flex;
+	        justify-content: center;
+            margin: 100px;
+        }
+		form{
+			display: flex;
+			flex-direction: column;
+            width: 500px;
+            padding: 20px;
+            background: url("https://static3.depositphotos.com/1000635/194/i/600/depositphotos_1945412-stock-photo-dried-leafs-seamless-background.jpg") repeat;
+            background-size: 50%;
+		}
+        form label{
+            margin: 5px;
+        }
+        input{
+            width: 100%;
+        }
+        a{
+	        text-align: center;
+            margin: 20px;
+        }
+	</style>
+</head>
+<body>
+	<div class="form-of-item">
+		<form action="" name="">
+			<label>Название товара:
+				<input type="text" name="item_name" placeholder="шо за товар?">
+			</label>
+			<label>Количество:
+				<input type="number" min="1" max="10" name="count" value="1" placeholder="штук: не больше 10">
+			</label>
+			<label>Цена:
+				<input type="number" name="price" min="10" max="100" step="10" value="10" placeholder="цена">
+			</label>
+			<label>Изображение:
+				<input type="text" name="img" placeholder="кинь ссылку на пикчу, как оно выглядит">
+			</label>
+			<a href='list.html'> Го в корзину</a>
+		</form>
+	</div>
+
+</body>
+</html>
