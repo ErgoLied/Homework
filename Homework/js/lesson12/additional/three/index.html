@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Title</title>
+
+	<style>
+		.task1, .task2, .task3{
+			display: flex;
+			flex-wrap: wrap;
+		}
+        .task1 div, .task2>div, .task3>div{
+	        background-color: #eeeeee;
+            margin: 5px;
+            padding: 5px;
+        }
+        .task2>div div, .task3>div>div{
+            background-color: #c9c9c9;
+            margin: 5px;
+        }
+        .task3>div>div div{
+            background-color: #8c8db1;
+            margin: 5px;
+        }
+	</style>
+</head>
+<body>
+
+
+<script src="task.js"></script>
+</body>
+</html>

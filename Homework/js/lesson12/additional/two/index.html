@@ -20,9 +20,6 @@
 			display: flex;
 			flex-direction: column;
             width: 500px;
-            padding: 20px;
-            background: url("https://static3.depositphotos.com/1000635/194/i/600/depositphotos_1945412-stock-photo-dried-leafs-seamless-background.jpg") repeat;
-            background-size: 50%;
 		}
         form label{
             margin: 5px;
@@ -36,11 +33,12 @@
         }
 	</style>
 </head>
+
 <body>
 	<div class="form-of-item">
-		<form action="" name="">
+		<form name="itemsForm">
 			<label>Название товара:
-				<input type="text" name="item_name" placeholder="шо за товар?">
+				<input type="text" name="item" placeholder="шо за товар?">
 			</label>
 			<label>Количество:
 				<input type="number" min="1" max="10" name="count" value="1" placeholder="штук: не больше 10">
@@ -51,9 +49,13 @@
 			<label>Изображение:
 				<input type="text" name="img" placeholder="кинь ссылку на пикчу, как оно выглядит">
 			</label>
+			<label>
+				<input type="button" name="btnAdd" value="добавить">
+			</label>
 			<a href='list.html'> Го в корзину</a>
 		</form>
 	</div>
 
+	<script src="shop1.js"></script>
 </body>
 </html>
