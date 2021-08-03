@@ -12,9 +12,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
             div_user.append(info_btn);
 
             info_btn.onclick = function () {
-                localStorage.setItem('user_id', user.id);
-                localStorage.setItem('user_info', JSON.stringify(user));
-                location.href='user-details.html';
+                location.href=`user-details.html?user=${JSON.stringify(user)}`;
             }
         }
     })

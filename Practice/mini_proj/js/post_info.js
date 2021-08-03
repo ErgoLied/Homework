@@ -1,7 +1,8 @@
-const user_info = localStorage.getItem('user_info');
-const post_info = localStorage.getItem('post_info');
-const user = JSON.parse(user_info);
-const post = JSON.parse(post_info);
+const url = new URL(location);
+const JSONpost = url.searchParams.get('post');
+const JSONuser = url.searchParams.get('user');
+const post = JSON.parse(JSONpost);
+const user = JSON.parse(JSONuser);
 
 const comments_box = document.getElementById('comments');
 const post_box = document.getElementById('post_info');

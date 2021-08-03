@@ -1,7 +1,6 @@
-const user_id = localStorage.getItem('user_id');    //get data from localstorage
-const user_info = localStorage.getItem('user_info');
-
-const user = JSON.parse(user_info);     //convert user-data__string into an object
+const url = new URL(location);
+const JSONuser = url.searchParams.get('user');
+const user = JSON.parse(JSONuser);
 
 const user_box = document.getElementById('user_info');      //and then put it in the div and display
 
@@ -59,7 +58,7 @@ const post_btn = document.getElementById('users_posts');
 post_btn.onclick = function (ev){
     ev.preventDefault();
     div_posts.innerText='';
-    fetch(`https://jsonplaceholder.typicode.com/users/${user_id}/posts`)
+    fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/posts`)
         .then(response => response.json())
         .then(posts => {
             for (const post of posts) {
@@ -73,8 +72,7 @@ post_btn.onclick = function (ev){
                 div_post.append(btn_details);
 
                 btn_details.onclick = function () {
-                    localStorage.setItem('post_info', JSON.stringify(post));
-                    location.href='post-details.html';
+                    location.href=`post-details.html?post=${JSON.stringify(post)}&user=${JSON.stringify(user)}`;
                 }
             }
         })
